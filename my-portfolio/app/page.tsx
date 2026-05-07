@@ -72,8 +72,9 @@ export default function Home() {
         <div className="gap-3 md:gap-6 space-x-3 md:space-x-6 text-xs md:text-sm flex flex-wrap justify-end">
           <a href="#about" className="hover:text-blue-400 transition-colors">About</a>
           <a href="#experience" className="hover:text-blue-400 transition-colors">Experience</a>
-          <a href="#projects" className="hover:text-blue-400 transition-colors">Projects</a>
           <a href="#publications" className="hover:text-blue-400 transition-colors">Publications</a>
+          <a href="#projects" className="hover:text-blue-400 transition-colors">Projects</a>
+          <a href="#contact" className="hover:text-blue-400 transition-colors">Contact</a>
         </div>
       </nav>
 
@@ -113,12 +114,12 @@ export default function Home() {
 
           <FadeIn direction="left" delay={300}>
             <p className="text-base md:text-lg text-gray-400 max-w-2xl mb-8 leading-relaxed text-left">
-              I&apos;m a Master of Science in Computer Science candidate at TU Dresden and a Google Cloud Certified Associate Cloud Engineer with professional experience as a Data Engineer Analyst at Deloitte USI. I&apos;ve built everything from interactive AI agents to automated DevOps pipelines that bridge the gap between data and production deployment. <strong className="text-blue-400 font-semibold">Currently based in Dresden</strong>, I&apos;m looking for a Werkstudent role where I can apply my expertise in Data Engineering and AI to help an engineering team tackle complex technical challenges.
+              I&apos;m a Master of Science in Computer Science candidate at TU Dresden and a Google Cloud Certified Engineer, bridging the gap between enterprise data engineering and academic AI research. Previously an Analyst at Deloitte USI, I build scalable DevOps pipelines and interactive AI agents. In the research sphere, my work focuses on deep learning, computer vision, and Explainable AI (XAI) for medical diagnostics—resulting in multiple Q1 peer-reviewed publications with over 250 citations. <strong className="text-blue-400 font-semibold">Currently based in Dresden</strong>, I&apos;m looking for a Werkstudent role where I can leverage both my production-grade engineering skills and applied research background to solve complex technical challenges.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <a href="#experience" className="bg-blue-600 hover:bg-blue-500 text-white text-center font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(37,99,235,0.4)] w-full sm:w-auto">
-                View My Work
+              <a href="#contact" className="bg-blue-600 hover:bg-blue-500 text-white text-center font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(37,99,235,0.4)] w-full sm:w-auto">
+                Hire Me
               </a>
               <a href="https://scholar.google.com/citations?user=07OvWo4AAAAJ&amp;hl=en" target="_blank" rel="noreferrer" className="border border-gray-600 hover:border-gray-400 text-gray-300 text-center font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-lg bg-gray-800/30 hover:bg-gray-800 w-full sm:w-auto">
                 Google Scholar
@@ -270,82 +271,6 @@ export default function Home() {
             </div>
           </div>
         </FadeIn>
-      </section>
-
-      {/* Engineering Projects Section */}
-      <section id="projects" className="max-w-4xl mx-auto mb-20 md:mb-24">
-        <FadeIn>
-          <h3 className="text-2xl md:text-3xl font-bold mb-8 md:mb-10 border-l-4 border-blue-500 pl-4">Engineering Projects</h3>
-        </FadeIn>
-        <div className="space-y-6 md:space-y-8">
-          
-          <FadeIn delay={100} direction="up">
-            <div className="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-700 transition-all duration-500 hover:border-blue-500 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(59,130,246,0.15)] group">
-              <h4 className="text-lg md:text-xl font-bold mb-3 md:mb-4 group-hover:text-blue-400 transition-colors">Machine Learning Spam Classifier</h4>
-              <p className="text-gray-400 text-sm leading-relaxed mb-4 group-hover:text-gray-300 transition-colors">
-                I engineered an end-to-end NLP machine learning pipeline to automatically classify a dataset of over 5,500 messages as either spam or legitimate. Using Pandas for data cleaning, I transformed the raw text into mathematical features by applying TF-IDF vectorization. I then trained a Logistic Regression classification model using Scikit-Learn, utilizing train-test splits to ensure the model could generalize to new data. The project culminated in a real-time predictive system that achieved an impressive 96.5% accuracy rate on unseen test data.
-              </p>
-              <div className="flex flex-wrap gap-2 mt-4 md:mt-6">
-                <span className="text-xs bg-gray-900 border border-gray-700 px-3 py-1 rounded text-blue-300 group-hover:border-blue-500/50 transition-colors">NLP</span>
-                <span className="text-xs bg-gray-900 border border-gray-700 px-3 py-1 rounded text-blue-300 group-hover:border-blue-500/50 transition-colors">Logistic Regression</span>
-              </div>
-            </div>
-          </FadeIn>
-
-          <FadeIn delay={200} direction="up">
-            <div className="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-700 transition-all duration-500 hover:border-blue-500 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(59,130,246,0.15)] group">
-              <h4 className="text-lg md:text-xl font-bold mb-3 md:mb-4 group-hover:text-blue-400 transition-colors">NLP-Powered Fake News Classification System</h4>
-              <p className="text-gray-400 text-sm leading-relaxed mb-4 group-hover:text-gray-300 transition-colors">
-                I developed a robust, NLP-powered machine learning pipeline designed to automatically detect and classify news articles as real or fake. By processing a dataset of over 20,800 articles, I applied advanced natural language processing techniques—including Porter Stemming and stopword removal—to clean and isolate core text features. I then engineered numerical feature vectors using TF-IDF vectorization and trained a Logistic Regression model via Scikit-Learn. Utilizing a stratified train-test split to ensure balanced validation, the model achieved an outstanding 97.9% accuracy rate on unseen data.
-              </p>
-            </div>
-          </FadeIn>
-
-          <FadeIn delay={300} direction="up">
-            <div className="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-700 transition-all duration-500 hover:border-blue-500 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(59,130,246,0.15)] group">
-              <h4 className="text-lg md:text-xl font-bold mb-3 md:mb-4 group-hover:text-blue-400 transition-colors">Gold Price Forecasting Model using Random Forest</h4>
-              <p className="text-gray-400 text-sm leading-relaxed mb-4 group-hover:text-gray-300 transition-colors">
-                I developed an advanced machine learning regression model to forecast gold prices (GLD) based on key financial indicators, including the S&amp;P 500, Crude Oil, Silver, and the EUR/USD exchange rate. Through comprehensive exploratory data analysis, I utilized Seaborn to map correlation heatmaps and identify the underlying relationships between these global market features. To capture the complex, non-linear patterns within the financial data, I engineered a predictive pipeline using Scikit-Learn and trained a robust Random Forest Regressor. Evaluated via an 80/20 train-test split, the ensemble model achieved an exceptional R-squared score of 0.988.
-              </p>
-            </div>
-          </FadeIn>
-
-          <FadeIn delay={400} direction="up">
-            <div className="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-700 transition-all duration-500 hover:border-blue-500 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(59,130,246,0.15)] group">
-              <h4 className="text-lg md:text-xl font-bold mb-3 md:mb-4 group-hover:text-blue-400 transition-colors">Credit Risk Classification System</h4>
-              <p className="text-gray-400 text-sm leading-relaxed mb-4 group-hover:text-gray-300 transition-colors">
-                I developed a machine learning classification system designed to predict bank loan approvals based on applicant demographics and financial history. Using Pandas, I rigorously preprocessed a dataset of loan applications by dropping missing values and encoding complex categorical variables—such as education level, dependent count, and property area—into structured numerical formats. I trained a Support Vector Machine (SVM) classifier with a linear kernel via Scikit-Learn, utilizing a stratified 90/10 train-test split to ensure balanced class representation.
-              </p>
-            </div>
-          </FadeIn>
-
-          <FadeIn delay={500} direction="up">
-            <div className="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-700 transition-all duration-500 hover:border-blue-500 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(59,130,246,0.15)] group">
-              <h4 className="text-lg md:text-xl font-bold mb-3 md:mb-4 group-hover:text-blue-400 transition-colors">Online Hospital Management System</h4>
-              <p className="text-gray-400 text-sm leading-relaxed mb-4 group-hover:text-gray-300 transition-colors">
-                I developed a centralized healthcare platform using Java and JavaFX to facilitate remote consultations during the COVID-19 pandemic. The application featured a robust User Authentication system and a comprehensive Patient Management dashboard, allowing for secure medical record handling and appointment scheduling. To ensure a reliable user experience, I integrated automated Prescription Management and a notification engine for appointment reminders and critical alerts. On the backend, I engineered a MySQL database architecture, writing optimized SQL queries to manage high-volume data retrieval and ensure seamless synchronization.
-              </p>
-              <div className="flex flex-wrap gap-2 mt-4 md:mt-6">
-                <span className="text-xs bg-gray-900 border border-gray-700 px-3 py-1 rounded text-blue-300 group-hover:border-blue-500/50 transition-colors">JavaFX</span>
-                <span className="text-xs bg-gray-900 border border-gray-700 px-3 py-1 rounded text-blue-300 group-hover:border-blue-500/50 transition-colors">MySQL</span>
-              </div>
-            </div>
-          </FadeIn>
-
-          <FadeIn delay={600} direction="up">
-            <div className="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-700 transition-all duration-500 hover:border-blue-500 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(59,130,246,0.15)] group">
-              <h4 className="text-lg md:text-xl font-bold mb-3 md:mb-4 group-hover:text-blue-400 transition-colors">E-Commerce Database Architecture (BigBasket Clone)</h4>
-              <p className="text-gray-400 text-sm leading-relaxed mb-4 group-hover:text-gray-300 transition-colors">
-                This project involved the end-to-end design and implementation of a scalable database management system for a high-traffic online grocery platform. I began by architecting a complex Entity-Relationship Diagram (ERD) to map out the intricate relationships between products, multi-tiered customer profiles, and order histories. I then translated this logic into a high-performance MySQL schema, implementing primary/foreign key constraints and indexing to ensure data integrity and rapid query execution. The final system was optimized to handle real-time inventory tracking and order processing.
-              </p>
-              <div className="flex flex-wrap gap-2 mt-4 md:mt-6">
-                <span className="text-xs bg-gray-900 border border-gray-700 px-3 py-1 rounded text-blue-300 group-hover:border-blue-500/50 transition-colors">ERD Design</span>
-                <span className="text-xs bg-gray-900 border border-gray-700 px-3 py-1 rounded text-blue-300 group-hover:border-blue-500/50 transition-colors">Relational Modeling</span>
-              </div>
-            </div>
-          </FadeIn>
-
-        </div>
       </section>
 
       {/* Publications Section */}
@@ -537,6 +462,82 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Engineering Projects Section */}
+      <section id="projects" className="max-w-4xl mx-auto mb-20 md:mb-24">
+        <FadeIn>
+          <h3 className="text-2xl md:text-3xl font-bold mb-8 md:mb-10 border-l-4 border-blue-500 pl-4">Engineering Projects</h3>
+        </FadeIn>
+        <div className="space-y-6 md:space-y-8">
+          
+          <FadeIn delay={100} direction="up">
+            <div className="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-700 transition-all duration-500 hover:border-blue-500 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(59,130,246,0.15)] group">
+              <h4 className="text-lg md:text-xl font-bold mb-3 md:mb-4 group-hover:text-blue-400 transition-colors">Machine Learning Spam Classifier</h4>
+              <p className="text-gray-400 text-sm leading-relaxed mb-4 group-hover:text-gray-300 transition-colors">
+                I engineered an end-to-end NLP machine learning pipeline to automatically classify a dataset of over 5,500 messages as either spam or legitimate. Using Pandas for data cleaning, I transformed the raw text into mathematical features by applying TF-IDF vectorization. I then trained a Logistic Regression classification model using Scikit-Learn, utilizing train-test splits to ensure the model could generalize to new data. The project culminated in a real-time predictive system that achieved an impressive 96.5% accuracy rate on unseen test data.
+              </p>
+              <div className="flex flex-wrap gap-2 mt-4 md:mt-6">
+                <span className="text-xs bg-gray-900 border border-gray-700 px-3 py-1 rounded text-blue-300 group-hover:border-blue-500/50 transition-colors">NLP</span>
+                <span className="text-xs bg-gray-900 border border-gray-700 px-3 py-1 rounded text-blue-300 group-hover:border-blue-500/50 transition-colors">Logistic Regression</span>
+              </div>
+            </div>
+          </FadeIn>
+
+          <FadeIn delay={200} direction="up">
+            <div className="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-700 transition-all duration-500 hover:border-blue-500 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(59,130,246,0.15)] group">
+              <h4 className="text-lg md:text-xl font-bold mb-3 md:mb-4 group-hover:text-blue-400 transition-colors">NLP-Powered Fake News Classification System</h4>
+              <p className="text-gray-400 text-sm leading-relaxed mb-4 group-hover:text-gray-300 transition-colors">
+                I developed a robust, NLP-powered machine learning pipeline designed to automatically detect and classify news articles as real or fake. By processing a dataset of over 20,800 articles, I applied advanced natural language processing techniques—including Porter Stemming and stopword removal—to clean and isolate core text features. I then engineered numerical feature vectors using TF-IDF vectorization and trained a Logistic Regression model via Scikit-Learn. Utilizing a stratified train-test split to ensure balanced validation, the model achieved an outstanding 97.9% accuracy rate on unseen data.
+              </p>
+            </div>
+          </FadeIn>
+
+          <FadeIn delay={300} direction="up">
+            <div className="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-700 transition-all duration-500 hover:border-blue-500 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(59,130,246,0.15)] group">
+              <h4 className="text-lg md:text-xl font-bold mb-3 md:mb-4 group-hover:text-blue-400 transition-colors">Gold Price Forecasting Model using Random Forest</h4>
+              <p className="text-gray-400 text-sm leading-relaxed mb-4 group-hover:text-gray-300 transition-colors">
+                I developed an advanced machine learning regression model to forecast gold prices (GLD) based on key financial indicators, including the S&amp;P 500, Crude Oil, Silver, and the EUR/USD exchange rate. Through comprehensive exploratory data analysis, I utilized Seaborn to map correlation heatmaps and identify the underlying relationships between these global market features. To capture the complex, non-linear patterns within the financial data, I engineered a predictive pipeline using Scikit-Learn and trained a robust Random Forest Regressor. Evaluated via an 80/20 train-test split, the ensemble model achieved an exceptional R-squared score of 0.988.
+              </p>
+            </div>
+          </FadeIn>
+
+          <FadeIn delay={400} direction="up">
+            <div className="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-700 transition-all duration-500 hover:border-blue-500 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(59,130,246,0.15)] group">
+              <h4 className="text-lg md:text-xl font-bold mb-3 md:mb-4 group-hover:text-blue-400 transition-colors">Credit Risk Classification System</h4>
+              <p className="text-gray-400 text-sm leading-relaxed mb-4 group-hover:text-gray-300 transition-colors">
+                I developed a machine learning classification system designed to predict bank loan approvals based on applicant demographics and financial history. Using Pandas, I rigorously preprocessed a dataset of loan applications by dropping missing values and encoding complex categorical variables—such as education level, dependent count, and property area—into structured numerical formats. I trained a Support Vector Machine (SVM) classifier with a linear kernel via Scikit-Learn, utilizing a stratified 90/10 train-test split to ensure balanced class representation.
+              </p>
+            </div>
+          </FadeIn>
+
+          <FadeIn delay={500} direction="up">
+            <div className="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-700 transition-all duration-500 hover:border-blue-500 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(59,130,246,0.15)] group">
+              <h4 className="text-lg md:text-xl font-bold mb-3 md:mb-4 group-hover:text-blue-400 transition-colors">Online Hospital Management System</h4>
+              <p className="text-gray-400 text-sm leading-relaxed mb-4 group-hover:text-gray-300 transition-colors">
+                I developed a centralized healthcare platform using Java and JavaFX to facilitate remote consultations during the COVID-19 pandemic. The application featured a robust User Authentication system and a comprehensive Patient Management dashboard, allowing for secure medical record handling and appointment scheduling. To ensure a reliable user experience, I integrated automated Prescription Management and a notification engine for appointment reminders and critical alerts. On the backend, I engineered a MySQL database architecture, writing optimized SQL queries to manage high-volume data retrieval and ensure seamless synchronization.
+              </p>
+              <div className="flex flex-wrap gap-2 mt-4 md:mt-6">
+                <span className="text-xs bg-gray-900 border border-gray-700 px-3 py-1 rounded text-blue-300 group-hover:border-blue-500/50 transition-colors">JavaFX</span>
+                <span className="text-xs bg-gray-900 border border-gray-700 px-3 py-1 rounded text-blue-300 group-hover:border-blue-500/50 transition-colors">MySQL</span>
+              </div>
+            </div>
+          </FadeIn>
+
+          <FadeIn delay={600} direction="up">
+            <div className="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-700 transition-all duration-500 hover:border-blue-500 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(59,130,246,0.15)] group">
+              <h4 className="text-lg md:text-xl font-bold mb-3 md:mb-4 group-hover:text-blue-400 transition-colors">E-Commerce Database Architecture (BigBasket Clone)</h4>
+              <p className="text-gray-400 text-sm leading-relaxed mb-4 group-hover:text-gray-300 transition-colors">
+                This project involved the end-to-end design and implementation of a scalable database management system for a high-traffic online grocery platform. I began by architecting a complex Entity-Relationship Diagram (ERD) to map out the intricate relationships between products, multi-tiered customer profiles, and order histories. I then translated this logic into a high-performance MySQL schema, implementing primary/foreign key constraints and indexing to ensure data integrity and rapid query execution. The final system was optimized to handle real-time inventory tracking and order processing.
+              </p>
+              <div className="flex flex-wrap gap-2 mt-4 md:mt-6">
+                <span className="text-xs bg-gray-900 border border-gray-700 px-3 py-1 rounded text-blue-300 group-hover:border-blue-500/50 transition-colors">ERD Design</span>
+                <span className="text-xs bg-gray-900 border border-gray-700 px-3 py-1 rounded text-blue-300 group-hover:border-blue-500/50 transition-colors">Relational Modeling</span>
+              </div>
+            </div>
+          </FadeIn>
+
+        </div>
+      </section>
+
       {/* Awards & Community */}
       <section className="max-w-4xl mx-auto mb-20 md:mb-32 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
         <FadeIn direction="up">
@@ -555,6 +556,39 @@ export default function Home() {
             <p className="text-gray-400 text-sm leading-relaxed">
               Raised money for the Akshaya Patra Foundation via a social media event in December 2021 to help feed and arrange basic needs for struggling individuals.
             </p>
+          </div>
+        </FadeIn>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="max-w-4xl mx-auto mb-20 md:mb-32">
+        <FadeIn>
+          <h3 className="text-2xl md:text-3xl font-bold mb-8 md:mb-10 border-l-4 border-blue-500 pl-4">Get In Touch</h3>
+        </FadeIn>
+        <FadeIn delay={100} direction="up">
+          <div className="bg-gray-800 p-6 md:p-8 rounded-xl border border-gray-700 shadow-xl">
+            <p className="text-gray-400 text-sm md:text-base mb-6">
+              I&apos;m always open to connecting! Feel free to reach out if you want to discuss my research, data engineering, or potential Werkstudent opportunities.
+            </p>
+            <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" className="space-y-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="flex flex-col">
+                  <label htmlFor="name" className="text-xs font-semibold text-gray-400 mb-1 uppercase tracking-wider">Name</label>
+                  <input type="text" id="name" name="name" required className="bg-gray-900 border border-gray-700 text-gray-200 rounded-lg p-3 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all" placeholder="John Doe" />
+                </div>
+                <div className="flex flex-col">
+                  <label htmlFor="email" className="text-xs font-semibold text-gray-400 mb-1 uppercase tracking-wider">Email</label>
+                  <input type="email" id="email" name="email" required className="bg-gray-900 border border-gray-700 text-gray-200 rounded-lg p-3 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all" placeholder="john@example.com" />
+                </div>
+              </div>
+              <div className="flex flex-col">
+                <label htmlFor="message" className="text-xs font-semibold text-gray-400 mb-1 uppercase tracking-wider">Message</label>
+                <textarea id="message" name="message" rows={5} required className="bg-gray-900 border border-gray-700 text-gray-200 rounded-lg p-3 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all resize-y" placeholder="Hello Abhinav, I'd like to discuss..."></textarea>
+              </div>
+              <button type="submit" className="w-full md:w-auto bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(37,99,235,0.4)]">
+                Send Message
+              </button>
+            </form>
           </div>
         </FadeIn>
       </section>
