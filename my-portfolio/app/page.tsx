@@ -95,7 +95,7 @@ export default function Home() {
             <div className="flex flex-col gap-3 text-xs md:text-sm text-gray-300 mb-8 border-l-4 border-blue-500 pl-4 bg-gray-800/50 p-4 rounded-r-lg hover:bg-gray-800/80 transition-colors duration-300 text-left">
               <div className="flex flex-wrap gap-x-6 gap-y-2">
                 <span className="flex items-center gap-2 hover:text-blue-300 transition-colors">
-                  📍 Dresden, Germany
+                  📍 Dresden | Berlin | Leipzig
                 </span>
                 <span className="flex items-center gap-2">
                   📧 <a href="mailto:abhinavmishra2526@gmail.com" className="hover:text-blue-400 transition-colors break-all">abhinavmishra2526@gmail.com</a>
@@ -114,7 +114,7 @@ export default function Home() {
 
           <FadeIn direction="left" delay={300}>
             <p className="text-base md:text-lg text-gray-400 max-w-2xl mb-8 leading-relaxed text-left">
-              I&apos;m a Master of Science in Computer Science candidate at TU Dresden and a Google Cloud Certified Engineer, bridging the gap between enterprise data engineering and academic AI research. Previously an Analyst at Deloitte USI, I build scalable DevOps pipelines and interactive AI agents. In the research sphere, my work focuses on deep learning, computer vision, and Explainable AI (XAI) for medical diagnostics—resulting in multiple Q1 peer-reviewed publications with over 250 citations. <strong className="text-blue-400 font-semibold">Currently based in Dresden</strong>, I&apos;m looking for a Werkstudent role where I can leverage both my production-grade engineering skills and applied research background to solve complex technical challenges.
+              I&apos;m a Master of Science in Computer Science candidate at TU Dresden and a Google Cloud Certified Engineer, bridging the gap between enterprise data engineering and academic AI research. Previously an Analyst at Deloitte USI, I build scalable DevOps pipelines and interactive AI agents. In the research sphere, my work focuses on deep learning, computer vision, and Explainable AI (XAI) for medical diagnostics—resulting in multiple Q1 peer-reviewed publications with over 250 citations. <strong className="text-blue-400 font-semibold">Open to opportunities in Berlin, Leipzig, and the Dresden area</strong>, I&apos;m looking for a Werkstudent role where I can leverage both my production-grade engineering skills and applied research background to solve complex technical challenges.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -570,7 +570,11 @@ export default function Home() {
             <p className="text-gray-400 text-sm md:text-base mb-6">
               I&apos;m always open to connecting! Feel free to reach out if you want to discuss my research, data engineering, or potential Werkstudent opportunities.
             </p>
-            <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" className="space-y-4">
+            <form action="https://api.web3forms.com/submit" method="POST" className="space-y-4">
+              
+              {/* Web3Forms Access Key */}
+              <input type="hidden" name="access_key" value="258159a7-4161-4717-a130-d78a1af9fef1" />
+              
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="flex flex-col">
                   <label htmlFor="name" className="text-xs font-semibold text-gray-400 mb-1 uppercase tracking-wider">Name</label>
