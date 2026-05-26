@@ -95,7 +95,7 @@ export default function Home() {
             <div className="flex flex-col gap-3 text-xs md:text-sm text-gray-300 mb-8 border-l-4 border-blue-500 pl-4 bg-gray-800/50 p-4 rounded-r-lg hover:bg-gray-800/80 transition-colors duration-300 text-left">
               <div className="flex flex-wrap gap-x-6 gap-y-2">
                 <span className="flex items-center gap-2 hover:text-blue-300 transition-colors">
-                  📍 Dresden | Berlin | Leipzig
+                  📍 Dresden | Berlin | Leipzig | chemnitz | Remote
                 </span>
                 <span className="flex items-center gap-2">
                   📧 <a href="mailto:abhinavmishra2526@gmail.com" className="hover:text-blue-400 transition-colors break-all">abhinavmishra2526@gmail.com</a>
@@ -114,7 +114,7 @@ export default function Home() {
 
           <FadeIn direction="left" delay={300}>
             <p className="text-base md:text-lg text-gray-400 max-w-2xl mb-8 leading-relaxed text-left">
-              I&apos;m a Master of Science in Computer Science candidate at TU Dresden and a Google Cloud Certified Engineer, bridging the gap between enterprise data engineering and academic AI research. Previously an Analyst at Deloitte USI, I build scalable DevOps pipelines and interactive AI agents. In the research sphere, my work focuses on deep learning, computer vision, and Explainable AI (XAI) for medical diagnostics—resulting in multiple Q1 peer-reviewed publications with over 250 citations. <strong className="text-blue-400 font-semibold">Open to opportunities in Berlin, Leipzig, and the Dresden area</strong>, I&apos;m looking for a Werkstudent role where I can leverage both my production-grade engineering skills and applied research background to solve complex technical challenges.
+              I&apos;m a Master of Science in Computer Science candidate at TU Dresden and a Google Cloud Certified Engineer, bridging the gap between enterprise data engineering and academic AI research. Previously an Analyst at Deloitte USI, I build scalable DevOps pipelines and interactive AI agents. In the research sphere, my work focuses on deep learning, computer vision, and Explainable AI (XAI) for medical diagnostics—resulting in multiple Q1 peer-reviewed publications. I&apos;m looking for a Werkstudent role where I can leverage both my production-grade engineering skills and applied research background to solve complex technical challenges.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -545,7 +545,7 @@ export default function Home() {
             <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 border-l-4 border-blue-500 pl-4">Awards &amp; Leadership</h3>
             <ul className="list-disc list-inside text-gray-400 text-sm space-y-3 md:space-y-4">
               <li className="leading-relaxed">Received applause award for leading the DevOps team and commitment to achieving deliverables on time (Jan 2025).</li>
-              <li className="leading-relaxed">Led multiple projects and research papers with combined citations of <strong className="text-gray-200">253</strong>.</li>
+              <li className="leading-relaxed">Led multiple projects and research papers.</li>
               <li className="leading-relaxed">Led Valorant gaming competition in techfest, 2022.</li>
             </ul>
           </div>
